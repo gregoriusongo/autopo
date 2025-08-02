@@ -74,6 +74,7 @@
         <module>autopo-ai-anthropic</module>
         <module>autopo-ai-ollama</module>
         <module>autopo-ai-azure-open-ai</module>
+        <module>autopo-ai-openrouter</module>
     </modules>
 
     <profiles>
