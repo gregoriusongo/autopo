@@ -309,6 +309,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>dev.langchain4j</groupId>
+                <artifactId>langchain4j-http-client-jdk</artifactId>
+                <version>${langchain.version}</version>
+            </dependency>
             <!-- test -->
             <dependency>
                 <groupId>org.testfx</groupId>
