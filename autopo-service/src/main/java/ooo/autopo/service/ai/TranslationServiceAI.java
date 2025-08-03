@@ -31,7 +31,7 @@ import ooo.autopo.model.ai.TranslationAssessment;
 public interface TranslationServiceAI {
 
     @SystemMessage("You are a native {{sourceLanguage}}/{{targetLanguage}} speaker and a professional translator. Your task is to provide translations from {{sourceLanguage}} to {{targetLanguage}}. You will take special care to not add any quotes, punctuation, linefeed or extra symbols and maintain the same case and formatting as the original. Your answer will be automatically processed therefore you need to return the translated text only and nothing more, no comments, no additional quotes, trailing or leading spaces, or full stop just the translation.")
-    @UserMessage("Your are translating {{description}}. Translate this: \"{{untranslated}}\"")
+    @UserMessage("Your are translating {{description}}. Translate this: {{untranslated}}")
     Result<String> translate(@V("sourceLanguage") String sourceLanguage, @V("targetLanguage") String targetLanguage,
             @V("description") String description, @V("untranslated") String untranslated);
 
